@@ -1,0 +1,17 @@
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.csprojResolveAssemblyReference.cache
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\HuffmanTree\bin\Debug\HuffmanTree.dll
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\HuffmanTree\bin\Debug\HuffmanTree.pdb
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.dll
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.pdb
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\HuffmanTree\bin\Debug\PowerCollections.dll
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\HuffmanTree\bin\Debug\PowerCollections.xml
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\HuffmanTree\bin\Debug\PriorityQueuet.dll
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\HuffmanTree\bin\Debug\PriorityQueuet.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\bin\Debug\HuffmanTree.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\bin\Debug\HuffmanTree.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\bin\Debug\PriorityQueuet.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\bin\Debug\PriorityQueuet.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\bin\Debug\PowerCollections.xml
+D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.csprojResolveAssemblyReference.cache
+D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.pdb

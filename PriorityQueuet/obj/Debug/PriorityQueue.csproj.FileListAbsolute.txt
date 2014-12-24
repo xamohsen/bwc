@@ -1,0 +1,5 @@
+D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\bin\Debug\PriorityQueuet.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\bin\Debug\PriorityQueuet.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueue.csprojResolveAssemblyReference.cache
+D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.pdb

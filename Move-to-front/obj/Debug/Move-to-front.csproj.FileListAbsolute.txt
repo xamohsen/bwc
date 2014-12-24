@@ -1,0 +1,10 @@
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Move-to-front\obj\Debug\Move-to-front.csprojResolveAssemblyReference.cache
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Move-to-front\bin\Debug\Move-to-front.dll
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Move-to-front\bin\Debug\Move-to-front.pdb
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Move-to-front\obj\Debug\Move-to-front.dll
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Move-to-front\obj\Debug\Move-to-front.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\bin\Debug\Move-to-front.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\bin\Debug\Move-to-front.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\obj\Debug\Move-to-front.csprojResolveAssemblyReference.cache
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\obj\Debug\Move-to-front.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\obj\Debug\Move-to-front.pdb

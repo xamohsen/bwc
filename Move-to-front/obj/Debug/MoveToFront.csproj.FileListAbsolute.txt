@@ -1,0 +1,5 @@
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\bin\Debug\Move-to-front.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\bin\Debug\Move-to-front.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\obj\Debug\MoveToFront.csprojResolveAssemblyReference.cache
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\obj\Debug\Move-to-front.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\obj\Debug\Move-to-front.pdb

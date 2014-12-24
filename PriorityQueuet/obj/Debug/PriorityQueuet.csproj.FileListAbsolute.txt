@@ -1,0 +1,10 @@
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\PriorityQueuet\bin\Debug\PriorityQueuet.dll
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\PriorityQueuet\bin\Debug\PriorityQueuet.pdb
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.csprojResolveAssemblyReference.cache
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.dll
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.csprojResolveAssemblyReference.cache
+D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\bin\Debug\PriorityQueuet.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\bin\Debug\PriorityQueuet.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.pdb

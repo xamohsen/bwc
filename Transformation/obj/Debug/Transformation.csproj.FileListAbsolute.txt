@@ -1,0 +1,5 @@
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Transformation\bin\Debug\Transformation.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Transformation\bin\Debug\Transformation.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Transformation\obj\Debug\Transformation.csprojResolveAssemblyReference.cache
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Transformation\obj\Debug\Transformation.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Transformation\obj\Debug\Transformation.pdb

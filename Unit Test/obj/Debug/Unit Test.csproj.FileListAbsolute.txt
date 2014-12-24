@@ -1,0 +1,26 @@
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\bin\Debug\Unit Test.exe.config
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\bin\Debug\Unit Test.exe
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\bin\Debug\Unit Test.pdb
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.csprojResolveAssemblyReference.cache
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.exe
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.pdb
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\bin\Debug\Move-to-front.dll
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\bin\Debug\Move-to-front.pdb
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\bin\Debug\HuffmanTree.dll
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\bin\Debug\HuffmanTree.pdb
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\bin\Debug\PriorityQueuet.dll
+C:\Users\AhmedMohsen\Documents\Visual Studio 2012\Projects\BurrowsWheelerCompression\Unit Test\bin\Debug\PriorityQueuet.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\Unit Test.exe.config
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.exe
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\Unit Test.exe
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\Unit Test.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\HuffmanTree.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\Move-to-front.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\Transformation.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\PriorityQueuet.dll
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\HuffmanTree.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\Move-to-front.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\Transformation.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\PriorityQueuet.pdb
+D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.csprojResolveAssemblyReference.cache
