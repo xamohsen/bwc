@@ -8,14 +8,22 @@ namespace Transformation
 {
     public class BurrowsWheelerTransformation
     {
+        private class Suffixe
+        {
+            public long HashValue { get; set; }
+            public long Index { get; set; }
+            public long Mods { get;set }
+        }
         private string text;
         private string transformedText;
         private int originalTextIndex;
         private int[] next;
-
+        private long mod;
+        private long _base;
         public BurrowsWheelerTransformation()
         {
-
+            mod = 10000000+7;
+            @base = 1000+7;
         }
 
         private void Initialize(string _text)
@@ -172,6 +180,11 @@ namespace Transformation
                     end = mid - 1;
             }
             return -1;
+        }
+
+        private List<Suffixe> Hash(string text)
+        {
+
         }
     }
 }

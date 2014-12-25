@@ -47,7 +47,7 @@ namespace BurrowsWheelerCompression.UI
             CompressionHelper.CompressedFileLength = _encodedHuffman.Length;
             byte[] encodedHuffman = ConvertFromBitArrayToByteArray(_encodedHuffman);
             
-            var compressedFilePath = @"D:\" + "Compressed" + Guid.NewGuid().ToString() + ".txt";
+            var compressedFilePath = Resources.CompressPath + Guid.NewGuid().ToString() + ".txt";
             CompressionHelper.CompressedFilePath = compressedFilePath;
             File.WriteAllBytes(compressedFilePath, encodedHuffman);
             var compressForm = new CompressForm();

@@ -37,7 +37,7 @@ namespace BurrowsWheelerCompression.UI
             string decodedMTF = CompressionHelper.MoveToFront.Decoding(decodedHuffman);
             string inversedText = CompressionHelper.Transformer.InverseTransformation(decodedMTF);
 
-            string decompressedFilePath = @"D:\" + "Decompressed" + Guid.NewGuid().ToString() + ".txt";
+            string decompressedFilePath = Resources.DecompressPath + Guid.NewGuid().ToString() + ".txt";
             CompressionHelper.DecompressedFilePath = decompressedFilePath;
             File.WriteAllText(decompressedFilePath, inversedText);
 
