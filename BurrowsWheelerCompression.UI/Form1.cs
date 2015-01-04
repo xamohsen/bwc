@@ -23,7 +23,6 @@ namespace BurrowsWheelerCompression.UI
         {
             InitializeComponent();
         }
-
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();

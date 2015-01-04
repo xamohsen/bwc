@@ -97,7 +97,6 @@ namespace Transformation
         {
             int[] suffixArray = GenerateSuffixArray(ref text);
             string transformedText = "";
-
             for (int i = 0; i < suffixArray.Length; i++)
             {
                 if (suffixArray[i] == 0)
@@ -106,24 +105,44 @@ namespace Transformation
                 int ind = (suffixArray[i] == 0) ? (text.Length - 1) : (suffixArray[i] - 1);
                 transformedText += text[ind];
             }
-
             return transformedText;
         }
-
         public string InverseTransformation(string text)
         {
-            int[] next = GenerateNextArray(text);
-            int index = next[OriginalSuffixIndex];
-            string inversed = "";
-            inversed += text[index];
-            for (int i = 0; i < next.Length - 1; i++)
+            int index = text.Count() - 1;
+            int[] Count = new int[256];
+            int[] Sum = new int[256];
+            int[] CountPrevSymbols = new int[text.Count()];
+            int sum = 0, V = OriginalSuffixIndex;
+            //char[] OriginalText = new char[text.Count()];
+            string OriginalText = "";
+            char Curnt_Char = text[V];
+            for (int i = 0; i < 256; i++)
+                Count[i] = Sum[i] = 0;
+            for (int i = 0; i < text.Count(); i++)
             {
-                index = next[index];
-                if (text[index] != null )
-                    inversed += text[index];
+                CountPrevSymbols[i] = Count[(int)text[i]];
+                Count[(int)text[i]]++;
             }
-
-            return inversed;
+            for (int i = 0; i < 256; i++)
+            {
+                Sum[i] = sum;
+                sum += Count[i];
+            }
+            OriginalText += Curnt_Char;
+            index--;
+            while (index >= 0)
+            {
+                //duke blue devils
+                if (Count[(int)Curnt_Char] > 0) Count[(int)Curnt_Char]--;
+                V = CountPrevSymbols[V] + Sum[(int)Curnt_Char];
+                Curnt_Char = text[V];
+                OriginalText += Curnt_Char;
+                index--;
+            }
+            char[] arr = OriginalText.ToCharArray();
+            Array.Reverse(arr);
+            return new string(arr);
         }
 
         public int[] GenerateNextArray(string transformedText)
@@ -134,6 +153,7 @@ namespace Transformation
             var LastDictionary = new Dictionary<char, List<int>>();
             foreach (var symbol in transformedText)
             {
+                if (symbol == '\0') continue;
                 if (Count.ContainsKey(symbol))
                 {
                     Count[symbol]++;
@@ -145,6 +165,7 @@ namespace Transformation
             }
             foreach (var symbol in transformedText)
             {
+                if (symbol == '\0') continue;
                 if (LastDictionary.ContainsKey(symbol))
                 {
                     LastDictionary[symbol].Add(_count++);
@@ -155,13 +176,15 @@ namespace Transformation
                     LastDictionary[symbol].Add(_count++);
                 }
             }
-            for (var charIndex = 0; charIndex < 256; charIndex++)
+            for (var charIndex = 1; charIndex < 256; charIndex++)
             {
                 if (Count.ContainsKey((char)charIndex))
+                {
                     for (var ind = 0; ind < Count[(char)charIndex]; ind++)
                     {
                         Next.Add(LastDictionary[(char)charIndex][ind]);
                     }
+                }
             }
 
             return Next.ToArray();
