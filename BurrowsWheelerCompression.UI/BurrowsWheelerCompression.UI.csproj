@@ -45,9 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompressionHelper.cs" />
-    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.Designer.cs" />
-    <Compile Include="OpenFileForm.cs" />
+    <Compile Include="OpenFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="OpenFileForm.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

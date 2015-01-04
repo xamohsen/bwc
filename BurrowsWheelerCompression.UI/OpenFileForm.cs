@@ -16,7 +16,7 @@ namespace BurrowsWheelerCompression.UI
         public OpenFileForm()
         {
             InitializeComponent();
-            txtFilePath.Text = CompressionHelper.FilePath;
+            //txtFilePath.Text = Helper.FilePath;
         }
 
         private void btnOpenFile_Click(object sender, EventArgs e)

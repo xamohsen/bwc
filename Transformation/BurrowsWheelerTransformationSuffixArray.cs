@@ -119,8 +119,7 @@ namespace Transformation
             for (int i = 0; i < next.Length - 1; i++)
             {
                 index = next[index];
-
-                if ((int)text[index] != 0)
+                if (text[index] != null )
                     inversed += text[index];
             }
 
@@ -156,15 +155,13 @@ namespace Transformation
                     LastDictionary[symbol].Add(_count++);
                 }
             }
-            foreach (var symbol in transformedText)
+            for (var charIndex = 0; charIndex < 256; charIndex++)
             {
-                if (Count.ContainsKey(symbol))
-                {
-                    for (var ind = 0; ind < Count[symbol]; ind++)
+                if (Count.ContainsKey((char)charIndex))
+                    for (var ind = 0; ind < Count[(char)charIndex]; ind++)
                     {
-                        Next.Add(LastDictionary[symbol][ind]);
+                        Next.Add(LastDictionary[(char)charIndex][ind]);
                     }
-                }
             }
 
             return Next.ToArray();

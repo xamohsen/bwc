@@ -15,12 +15,12 @@ using HuffmanCompression;
 
 namespace BurrowsWheelerCompression.UI
 {
-    public static class CompressionHelper
+    public class CompressionHelper
     {
-        public static BurrowsWheelerTransformationSuffixArray Transformer = new BurrowsWheelerTransformationSuffixArray();
-        public static MTF MoveToFront = new MTF();
-        public static HuffmanTree Huffman = new HuffmanTree();
-        public static long CompressedFileLength;
-        public static string FilePath;
+        public BurrowsWheelerTransformationSuffixArray Transformer = new BurrowsWheelerTransformationSuffixArray();
+        public MTF MoveToFront = new MTF();
+        public HuffmanTree Huffman = new HuffmanTree();
+        public int CompressedFileLength;
+        public string FilePath;
     }
 }
