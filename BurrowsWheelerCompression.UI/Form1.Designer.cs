@@ -31,6 +31,7 @@
             this.btnBrowse = new System.Windows.Forms.Button();
             this.txtPath = new System.Windows.Forms.TextBox();
             this.btnCompress = new System.Windows.Forms.Button();
+            this.btnDeCompress = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBrowse
@@ -54,7 +55,7 @@
             // 
             // btnCompress
             // 
-            this.btnCompress.Location = new System.Drawing.Point(273, 112);
+            this.btnCompress.Location = new System.Drawing.Point(118, 98);
             this.btnCompress.Name = "btnCompress";
             this.btnCompress.Size = new System.Drawing.Size(75, 23);
             this.btnCompress.TabIndex = 4;
@@ -62,11 +63,22 @@
             this.btnCompress.UseVisualStyleBackColor = true;
             this.btnCompress.Click += new System.EventHandler(this.btnCompress_Click);
             // 
+            // btnDeCompress
+            // 
+            this.btnDeCompress.Location = new System.Drawing.Point(383, 98);
+            this.btnDeCompress.Name = "btnDeCompress";
+            this.btnDeCompress.Size = new System.Drawing.Size(75, 23);
+            this.btnDeCompress.TabIndex = 5;
+            this.btnDeCompress.Text = "DeCompress";
+            this.btnDeCompress.UseVisualStyleBackColor = true;
+            this.btnDeCompress.Click += new System.EventHandler(this.btnDeCompress_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(619, 158);
+            this.Controls.Add(this.btnDeCompress);
             this.Controls.Add(this.btnCompress);
             this.Controls.Add(this.txtPath);
             this.Controls.Add(this.btnBrowse);
@@ -82,6 +94,7 @@
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.TextBox txtPath;
         private System.Windows.Forms.Button btnCompress;
+        private System.Windows.Forms.Button btnDeCompress;
     }
 }
 

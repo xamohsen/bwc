@@ -3,3 +3,7 @@ D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\bin\Debug\Move-to
 D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\obj\Debug\MoveToFront.csprojResolveAssemblyReference.cache
 D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\obj\Debug\Move-to-front.dll
 D:\Projects\C#\Sources\BurrowsWheelerCompression\Move-to-front\obj\Debug\Move-to-front.pdb
+E:\BurrowsWheelerCompression\MoveToFront\bin\Debug\Move-to-front.dll
+E:\BurrowsWheelerCompression\MoveToFront\bin\Debug\Move-to-front.pdb
+E:\BurrowsWheelerCompression\MoveToFront\obj\Debug\Move-to-front.dll
+E:\BurrowsWheelerCompression\MoveToFront\obj\Debug\Move-to-front.pdb

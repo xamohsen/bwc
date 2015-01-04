@@ -24,3 +24,15 @@ D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\Move-to-fro
 D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\Transformation.pdb
 D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\bin\Debug\PriorityQueuet.pdb
 D:\Projects\C#\Sources\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.csprojResolveAssemblyReference.cache
+E:\BurrowsWheelerCompression\Unit Test\bin\Debug\Unit Test.exe.config
+E:\BurrowsWheelerCompression\Unit Test\bin\Debug\Unit Test.exe
+E:\BurrowsWheelerCompression\Unit Test\bin\Debug\Unit Test.pdb
+E:\BurrowsWheelerCompression\Unit Test\bin\Debug\HuffmanTree.dll
+E:\BurrowsWheelerCompression\Unit Test\bin\Debug\Transformation.dll
+E:\BurrowsWheelerCompression\Unit Test\bin\Debug\PriorityQueuet.dll
+E:\BurrowsWheelerCompression\Unit Test\bin\Debug\HuffmanTree.pdb
+E:\BurrowsWheelerCompression\Unit Test\bin\Debug\Transformation.pdb
+E:\BurrowsWheelerCompression\Unit Test\bin\Debug\PriorityQueuet.pdb
+E:\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.csprojResolveAssemblyReference.cache
+E:\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.exe
+E:\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.pdb

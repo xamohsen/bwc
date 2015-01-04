@@ -10,25 +10,22 @@ namespace HuffmanCompression
 {
     public class HuffmanTree
     {
-        public Dictionary<char, int> Frequencies = new Dictionary<char, int>();
         private List<Node> NodesList = new List<Node>();
         private PriorityQueue.PriorityQueue<Node> Queue = new PriorityQueue.PriorityQueue<Node>();
-        public Node Root { get; set; }
+        public int[] Frequencies = new int[256];
+        private Node Root { get; set; }
+        public short[] TreeArray { get; set; }
 
-        public void Build(List<int> input)
+        public void BuildTree()
         {
-            foreach (var _symbol in input)
+            for (int i = 0; i < Frequencies.Length; i++)
             {
-                char symbol = (char)_symbol;
-                if (!Frequencies.ContainsKey(symbol))
-                    Frequencies.Add(symbol, 1);
-                else
-                    Frequencies[symbol]++;
+                if (Frequencies[i] > 0)
+                {
+                    Queue.Enqueue(new Node { Symbol = (char)i, Frequency = Frequencies[i] });
+                }
             }
-            foreach (var symbol in Frequencies)
-            {
-                Queue.Enqueue(new Node { Symbol = symbol.Key, Frequency = symbol.Value });
-            }
+
             while (Queue.Count() > 1)
             {
                 var node1 = Queue.Dequeue();
@@ -40,9 +37,47 @@ namespace HuffmanCompression
                     Left = node1,
                     Right = node2
                 };
+
                 Queue.Enqueue(parent);
             }
-            this.Root = Queue.Dequeue();
+
+            Root = Queue.Dequeue();
+
+            int height = GetHight(Root);
+            int arraySize = (int)Math.Pow(2, height);
+
+            TreeArray = new short[arraySize];
+
+            for (int i = 0; i < TreeArray.Length; i++)
+            {
+                TreeArray[i] = -1;
+            }
+
+            this.SaveToArray(0, Root);
+        }
+
+        public void Build(List<int> input)
+        {
+            for (int i = 0; i < Frequencies.Length; i++)
+            {
+                Frequencies[i] = 0;
+            }
+            foreach (var _symbol in input)
+            {
+                Frequencies[_symbol]++;
+            }
+            this.BuildTree();
+        }
+
+        private void SaveToArray(int index, Node root)
+        {
+            TreeArray[index] = (short)root.Symbol;
+
+            if (IsLeaf(root))
+                return;
+
+            SaveToArray(2 * index + 1, root.Left);
+            SaveToArray(2 * index + 2, root.Right);
         }
 
         public BitArray Encode(List<int> _source)
@@ -60,8 +95,8 @@ namespace HuffmanCompression
 
         public List<int> Decode(BitArray bits)
         {
-            Node current = this.Root;
             string decoded = "";
+            Node current = Root;
             foreach (bool bit in bits)
             {
                 if (bit)
@@ -78,10 +113,11 @@ namespace HuffmanCompression
                         current = current.Left;
                     }
                 }
+
                 if (IsLeaf(current))
                 {
                     decoded += current.Symbol;
-                    current = this.Root;
+                    current = Root;
                 }
             }
 
@@ -98,6 +134,22 @@ namespace HuffmanCompression
         public bool IsLeaf(Node node)
         {
             return (node.Left == null && node.Right == null);
+        }
+
+        public bool IsLeaf(int index)
+        {
+            int left = 2 * index + 1;
+            int right = 2 * index + 2;
+
+            return ((left >= TreeArray.Length || TreeArray[left] == -1) && (right >= TreeArray.Length || TreeArray[right] == -1));
+        }
+
+        private int GetHight(Node node)
+        {
+            if (IsLeaf(node))
+                return 1;
+
+            return 1 + Math.Max(GetHight(node.Left), GetHight(node.Right));
         }
     }
 }

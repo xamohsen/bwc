@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -51,10 +52,6 @@
     <ProjectReference Include="..\HuffmanTree\HuffmanTree.csproj">
       <Project>{e0be7c8e-03db-45a8-8d1b-711da91484a8}</Project>
       <Name>HuffmanTree</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Move-to-front\MoveToFront.csproj">
-      <Project>{932d74d8-9d4e-4418-88de-7d39ce191fa6}</Project>
-      <Name>MoveToFront</Name>
     </ProjectReference>
     <ProjectReference Include="..\Transformation\Transformation.csproj">
       <Project>{db86de7b-5fdf-4029-8011-9ec8b498c5ab}</Project>

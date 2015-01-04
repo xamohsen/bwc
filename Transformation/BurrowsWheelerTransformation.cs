@@ -12,18 +12,18 @@ namespace Transformation
         {
             public long HashValue { get; set; }
             public long Index { get; set; }
-            public long Mods { get;set }
+            public long Mods { get; set; }
         }
         private string text;
         private string transformedText;
         private int originalTextIndex;
         private int[] next;
         private long mod;
-        private long _base;
+        private long @base;
         public BurrowsWheelerTransformation()
         {
-            mod = 10000000+7;
-            @base = 1000+7;
+            mod = 10000000 + 7;
+            @base = 1000 + 7;
         }
 
         private void Initialize(string _text)
@@ -165,7 +165,7 @@ namespace Transformation
         {
             return BinarySearch(arr, elem, 0, arr.Length - 1);
         }
-        
+
         private int BinarySearch(string[] arr, string elem, int start, int end)
         {
             while (start < end)
@@ -182,9 +182,35 @@ namespace Transformation
             return -1;
         }
 
-        private List<Suffixe> Hash(string text)
-        {
+        //private List<Suffixe> Hash(string text)
+        //{
+        //    var hashedSuffixes = new List<Suffixe>();
+        //    var length = text.Count();
+        //    var initialSuffixe = new Suffixe() { HashValue = 0, Index = 0, Mods = 0 };
+        //    for (var i = length - 1; i >= 0; i--)
+        //    {
+        //        initialSuffixe.HashValue += initialSuffixe.HashValue * @base + ((int)text[i]);
+        //        while (initialSuffixe.HashValue >= mod)
+        //        {
+        //            initialSuffixe.HashValue -= mod;
+        //            initialSuffixe.Mods++;
+        //        }
+        //    }
+        //    var hashValue = initialSuffixe.HashValue;
+        //    var index = 1;
+        //    hashedSuffixes.Add(initialSuffixe);
+        //    for (int i = 0; i < length - 1; i++)
+        //    {
+        //        //routate the string
+        //        char firstChar = text[0];
+        //        text = text.Remove(0, 1);
+        //        text += firstChar;
 
-        }
+        //        //change the hash value for each string
+        //        hashValue -= ;
+
+        //    }
+        //    return hashedSuffixes;
+        //}
     }
 }

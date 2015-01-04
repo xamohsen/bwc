@@ -3,3 +3,7 @@ D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\bin\Debug\Priori
 D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueue.csprojResolveAssemblyReference.cache
 D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.dll
 D:\Projects\C#\Sources\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.pdb
+E:\BurrowsWheelerCompression\PriorityQueuet\bin\Debug\PriorityQueuet.dll
+E:\BurrowsWheelerCompression\PriorityQueuet\bin\Debug\PriorityQueuet.pdb
+E:\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.dll
+E:\BurrowsWheelerCompression\PriorityQueuet\obj\Debug\PriorityQueuet.pdb

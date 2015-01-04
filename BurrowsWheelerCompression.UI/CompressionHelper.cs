@@ -17,11 +17,10 @@ namespace BurrowsWheelerCompression.UI
 {
     public static class CompressionHelper
     {
-        public static BurrowsWheelerTransformation Transformer = new BurrowsWheelerTransformation();
+        public static BurrowsWheelerTransformationSuffixArray Transformer = new BurrowsWheelerTransformationSuffixArray();
         public static MTF MoveToFront = new MTF();
         public static HuffmanTree Huffman = new HuffmanTree();
         public static long CompressedFileLength;
-        public static string CompressedFilePath;
-        public static string DecompressedFilePath;
+        public static string FilePath;
     }
 }

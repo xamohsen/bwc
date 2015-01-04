@@ -15,3 +15,10 @@ D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\bin\Debug\PowerColl
 D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.csprojResolveAssemblyReference.cache
 D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.dll
 D:\Projects\C#\Sources\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.pdb
+E:\BurrowsWheelerCompression\HuffmanTree\bin\Debug\HuffmanTree.dll
+E:\BurrowsWheelerCompression\HuffmanTree\bin\Debug\HuffmanTree.pdb
+E:\BurrowsWheelerCompression\HuffmanTree\bin\Debug\PriorityQueuet.dll
+E:\BurrowsWheelerCompression\HuffmanTree\bin\Debug\PriorityQueuet.pdb
+E:\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.csprojResolveAssemblyReference.cache
+E:\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.dll
+E:\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.pdb

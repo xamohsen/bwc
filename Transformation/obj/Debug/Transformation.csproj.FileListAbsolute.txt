@@ -3,3 +3,8 @@ D:\Projects\C#\Sources\BurrowsWheelerCompression\Transformation\bin\Debug\Transf
 D:\Projects\C#\Sources\BurrowsWheelerCompression\Transformation\obj\Debug\Transformation.csprojResolveAssemblyReference.cache
 D:\Projects\C#\Sources\BurrowsWheelerCompression\Transformation\obj\Debug\Transformation.dll
 D:\Projects\C#\Sources\BurrowsWheelerCompression\Transformation\obj\Debug\Transformation.pdb
+E:\BurrowsWheelerCompression\Transformation\obj\Debug\Transformation.csprojResolveAssemblyReference.cache
+E:\BurrowsWheelerCompression\Transformation\obj\Debug\Transformation.dll
+E:\BurrowsWheelerCompression\Transformation\obj\Debug\Transformation.pdb
+E:\BurrowsWheelerCompression\Transformation\bin\Debug\Transformation.dll
+E:\BurrowsWheelerCompression\Transformation\bin\Debug\Transformation.pdb

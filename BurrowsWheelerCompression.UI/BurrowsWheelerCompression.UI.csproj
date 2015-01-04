@@ -44,36 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompressForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CompressForm.Designer.cs">
-      <DependentUpon>CompressForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="CompressionHelper.cs" />
-    <Compile Include="DecompressedForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DecompressedForm.Designer.cs">
-      <DependentUpon>DecompressedForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.Designer.cs" />
+    <Compile Include="OpenFileForm.cs" />
+    <Compile Include="OpenFileForm.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CompressForm.resx">
-      <DependentUpon>CompressForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DecompressedForm.resx">
-      <DependentUpon>DecompressedForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="OpenFileForm.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -101,7 +80,7 @@
       <Project>{e0be7c8e-03db-45a8-8d1b-711da91484a8}</Project>
       <Name>HuffmanTree</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Move-to-front\MoveToFront.csproj">
+    <ProjectReference Include="..\MoveToFront\MoveToFront.csproj">
       <Project>{932d74d8-9d4e-4418-88de-7d39ce191fa6}</Project>
       <Name>MoveToFront</Name>
     </ProjectReference>
