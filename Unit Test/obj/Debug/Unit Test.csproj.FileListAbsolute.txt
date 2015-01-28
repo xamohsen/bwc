@@ -36,3 +36,39 @@ E:\BurrowsWheelerCompression\Unit Test\bin\Debug\PriorityQueuet.pdb
 E:\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.csprojResolveAssemblyReference.cache
 E:\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.exe
 E:\BurrowsWheelerCompression\Unit Test\obj\Debug\Unit Test.pdb
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Unit Test.exe.config
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\obj\Debug\Unit Test.exe
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\obj\Debug\Unit Test.pdb
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Unit Test.exe
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Unit Test.pdb
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\bin\Debug\HuffmanTree.dll
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Transformation.dll
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\bin\Debug\PriorityQueuet.dll
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\bin\Debug\HuffmanTree.pdb
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Transformation.pdb
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\bin\Debug\PriorityQueuet.pdb
+E:\Downloads\BurrowsWheelerCompression-master\Unit Test\obj\Debug\Unit Test.csprojResolveAssemblyReference.cache
+D:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Unit Test.exe.config
+D:\BurrowsWheelerCompression-master\Unit Test\obj\Debug\Unit Test.exe
+D:\BurrowsWheelerCompression-master\Unit Test\obj\Debug\Unit Test.pdb
+D:\BurrowsWheelerCompression-master\Unit Test\obj\Debug\Unit Test.csprojResolveAssemblyReference.cache
+D:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Unit Test.exe
+D:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Unit Test.pdb
+D:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\HuffmanTree.dll
+D:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Transformation.dll
+D:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\PriorityQueuet.dll
+D:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\HuffmanTree.pdb
+D:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Transformation.pdb
+D:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\PriorityQueuet.pdb
+E:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Unit Test.exe.config
+E:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Unit Test.exe
+E:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Unit Test.pdb
+E:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\HuffmanTree.dll
+E:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Transformation.dll
+E:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\PriorityQueuet.dll
+E:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\HuffmanTree.pdb
+E:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\Transformation.pdb
+E:\BurrowsWheelerCompression-master\Unit Test\bin\Debug\PriorityQueuet.pdb
+E:\BurrowsWheelerCompression-master\Unit Test\obj\Debug\Unit Test.csprojResolveAssemblyReference.cache
+E:\BurrowsWheelerCompression-master\Unit Test\obj\Debug\Unit Test.exe
+E:\BurrowsWheelerCompression-master\Unit Test\obj\Debug\Unit Test.pdb

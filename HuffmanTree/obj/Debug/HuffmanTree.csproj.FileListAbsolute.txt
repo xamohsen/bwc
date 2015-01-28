@@ -22,3 +22,10 @@ E:\BurrowsWheelerCompression\HuffmanTree\bin\Debug\PriorityQueuet.pdb
 E:\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.csprojResolveAssemblyReference.cache
 E:\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.dll
 E:\BurrowsWheelerCompression\HuffmanTree\obj\Debug\HuffmanTree.pdb
+E:\BurrowsWheelerCompression-master\HuffmanTree\bin\Debug\HuffmanTree.dll
+E:\BurrowsWheelerCompression-master\HuffmanTree\bin\Debug\HuffmanTree.pdb
+E:\BurrowsWheelerCompression-master\HuffmanTree\bin\Debug\PriorityQueuet.dll
+E:\BurrowsWheelerCompression-master\HuffmanTree\bin\Debug\PriorityQueuet.pdb
+E:\BurrowsWheelerCompression-master\HuffmanTree\obj\Debug\HuffmanTree.csprojResolveAssemblyReference.cache
+E:\BurrowsWheelerCompression-master\HuffmanTree\obj\Debug\HuffmanTree.dll
+E:\BurrowsWheelerCompression-master\HuffmanTree\obj\Debug\HuffmanTree.pdb

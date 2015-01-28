@@ -7,3 +7,8 @@ E:\BurrowsWheelerCompression\MoveToFront\bin\Debug\Move-to-front.dll
 E:\BurrowsWheelerCompression\MoveToFront\bin\Debug\Move-to-front.pdb
 E:\BurrowsWheelerCompression\MoveToFront\obj\Debug\Move-to-front.dll
 E:\BurrowsWheelerCompression\MoveToFront\obj\Debug\Move-to-front.pdb
+E:\BurrowsWheelerCompression-master\MoveToFront\obj\Debug\MoveToFront.csprojResolveAssemblyReference.cache
+E:\BurrowsWheelerCompression-master\MoveToFront\obj\Debug\Move-to-front.dll
+E:\BurrowsWheelerCompression-master\MoveToFront\bin\Debug\Move-to-front.dll
+E:\BurrowsWheelerCompression-master\MoveToFront\bin\Debug\Move-to-front.pdb
+E:\BurrowsWheelerCompression-master\MoveToFront\obj\Debug\Move-to-front.pdb

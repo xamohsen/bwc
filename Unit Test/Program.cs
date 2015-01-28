@@ -14,12 +14,26 @@ namespace Unit_Test
     {
         static void Main(string[] args)
         {
-            string last = "fdafcaaaabb";
-            int ind = 2;
-            var output = InverseTransformation(last, ind);
-            foreach (var t in output)
-                Console.Write(t);
-            Console.WriteLine();
+            //string last = "fdafcaaaabb";
+            //int ind = 2;
+            //var output = InverseTransformation(last, ind);
+            //foreach (var t in output)
+            //    Console.Write(t);
+            //Console.WriteLine()
+            //string transformed = transformer.Transform("abfacadabfa");
+            //Console.WriteLine(transformed);
+            string s = "abbbaabbbbaccabbaaabc";
+            List<string> r = new List<string>();
+            r.Add(s);
+            for(int i = 1 ; i < s.Count(); i ++)
+            {
+                s = s.Substring(1) + s[0];
+                r.Add(s);
+            }
+            r.Sort();
+            foreach(var i in r){
+                Console.WriteLine(i);
+            }
         }
         public static string InverseTransformation(string text, int OriginalSuffixIndex)
         {

@@ -39,33 +39,55 @@ namespace BurrowsWheelerCompression.UI
         }
         private void btnCompress_Click(object sender, EventArgs e)
         {
-            string filePath = txtPath.Text;
-            string textInFile = File.ReadAllText(filePath);
-            var compressedFilePath = @"E:\" + "Compressed" + Guid.NewGuid().ToString() + ".bin";
-            Helper.FilePath = compressedFilePath;
-            var transformedText = Helper.Transformer.Transform(textInFile);
-            var encodedMTF = Helper.MoveToFront.Encoding(transformedText);
-            Helper.Huffman.Build(encodedMTF);
-            BitArray _encodedHuffman = Helper.Huffman.Encode(encodedMTF);
-            Helper.CompressedFileLength = _encodedHuffman.Length;
-            byte[] encodedHuffman = ConvertFromBitArrayToByteArray(_encodedHuffman);
-            SaveToFile(compressedFilePath, encodedHuffman);
-            var form = new OpenFileForm();
-            form.ShowDialog();
+            //try
+            //{
+                Stopwatch sw = new Stopwatch();
+                Helper = new CompressionHelper();
+                sw.Start();
+                string filePath = txtPath.Text;
+                byte[] textInFile = File.ReadAllBytes(filePath);
+                var compressedFilePath = @"E:\" + "Compressed" + Guid.NewGuid().ToString() + ".bin";
+                Helper.FilePath = compressedFilePath;
+                byte[] transformedText = Helper.Transformer.Transform(textInFile);
+                byte[] encodedMTF = Helper.MoveToFront.Encoding(transformedText);
+                Helper.Huffman.Build(encodedMTF);
+                BitArray _encodedHuffman = Helper.Huffman.Encode(encodedMTF);
+                Helper.CompressedFileLength = _encodedHuffman.Length;
+                byte[] encodedHuffman = ConvertFromBitArrayToByteArray(_encodedHuffman);
+                SaveToFile(compressedFilePath, encodedHuffman);
+                MessageBox.Show(sw.Elapsed.ToString());
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //var form = new OpenFileForm();
+            //form.ShowDialog();
         }
         private void btnDeCompress_Click(object sender, EventArgs e)
         {
-            string filePath = txtPath.Text;
-            byte[] bytesInFile = LoadFromFile(filePath);
-            BitArray bitsInFile = ConvertFromByteArrayToBitArray(bytesInFile);
-            List<int> decodedHuffman = Helper.Huffman.Decode(bitsInFile);
-            string decodedMTF = Helper.MoveToFront.Decoding(decodedHuffman);
-            string inversedText = Helper.Transformer.InverseTransformation(decodedMTF);
-            string decompressedFilePath = @"E:\" + "Decompressed" + Guid.NewGuid().ToString() + ".txt";
-            Helper.FilePath = decompressedFilePath;
-            File.WriteAllText(decompressedFilePath, inversedText);
-            var form = new OpenFileForm();
-            form.ShowDialog();
+            try
+            {
+                Stopwatch sw = new Stopwatch();
+                Helper = new CompressionHelper();
+                sw.Start();
+                string filePath = txtPath.Text;
+                byte[] bytesInFile = LoadFromFile(filePath);
+                BitArray bitsInFile = ConvertFromByteArrayToBitArray(bytesInFile);
+                var decodedHuffman = Helper.Huffman.Decode(bitsInFile);
+                List<int> decodedMTF = Helper.MoveToFront.Decoding(decodedHuffman);
+                byte[] inversedText = Helper.Transformer.InverseTransformation(decodedMTF);
+                string decompressedFilePath = @"E:\" + "Decompressed" + Guid.NewGuid().ToString() + ".txt";
+                Helper.FilePath = decompressedFilePath;
+                File.WriteAllBytes(decompressedFilePath, inversedText);
+                MessageBox.Show(sw.Elapsed.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            //var form = new OpenFileForm();
+            //form.ShowDialog();
         }
 
         private void SaveToFile(string compressedFilePath, byte[] encodedHuffman)
@@ -95,7 +117,7 @@ namespace BurrowsWheelerCompression.UI
                 Helper.CompressedFileLength = reader.ReadInt32();
                 pos += sizeof(int);
                 int[] frequencies = new int[256];
-                for (int i = 0; i < frequencies.Length; i++)
+                for (int i = 0; i < 256; i++)
                 {
                     frequencies[i] = reader.ReadInt32();
                     pos += sizeof(int);
@@ -155,6 +177,6 @@ namespace BurrowsWheelerCompression.UI
 
             return bitArray;
         }
-        
+
     }
 }

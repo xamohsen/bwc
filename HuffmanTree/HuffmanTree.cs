@@ -12,17 +12,20 @@ namespace HuffmanCompression
     {
         private List<Node> NodesList = new List<Node>();
         private PriorityQueue.PriorityQueue<Node> Queue = new PriorityQueue.PriorityQueue<Node>();
+        private Dictionary<char, Node> LeefDectionry = new Dictionary<char, Node>();
         public int[] Frequencies = new int[256];
         private Node Root { get; set; }
         public short[] TreeArray { get; set; }
 
         public void BuildTree()
         {
-            for (int i = 0; i < Frequencies.Length; i++)
+            LeefDectionry.Clear();
+            for (int i = 0; i < 256; i++)
             {
                 if (Frequencies[i] > 0)
                 {
-                    Queue.Enqueue(new Node { Symbol = (char)i, Frequency = Frequencies[i] });
+                    Queue.Enqueue(new Node { Symbol = (char)i, Frequency = Frequencies[i], ISLeaf = true });
+                    //LeefDectionry.Add((char)i, new Node { Symbol = (char)i, Frequency = Frequencies[i], ISLeaf =true });
                 }
             }
 
@@ -35,9 +38,14 @@ namespace HuffmanCompression
                     Symbol = '*',
                     Frequency = node1.Frequency + node2.Frequency,
                     Left = node1,
-                    Right = node2
+                    Right = node2,
+                    ISLeaf = false,
                 };
-
+                node1.Parent = node2.Parent = parent;
+                node1.Bit = false;
+                node2.Bit = true;
+                if (node1.ISLeaf) LeefDectionry.Add(node1.Symbol,node1);
+                if (node2.ISLeaf) LeefDectionry.Add(node2.Symbol, node2);
                 Queue.Enqueue(parent);
             }
 
@@ -48,7 +56,7 @@ namespace HuffmanCompression
 
             TreeArray = new short[arraySize];
 
-            for (int i = 0; i < TreeArray.Length; i++)
+            for (int i = 0; i < arraySize; i++)
             {
                 TreeArray[i] = -1;
             }
@@ -56,15 +64,16 @@ namespace HuffmanCompression
             this.SaveToArray(0, Root);
         }
 
-        public void Build(List<int> input)
+        public void Build(byte[] input)
         {
-            for (int i = 0; i < Frequencies.Length; i++)
+
+            for (int i = 0; i < 256; i++)
             {
                 Frequencies[i] = 0;
             }
             foreach (var _symbol in input)
             {
-                Frequencies[_symbol]++;
+                Frequencies[(int)_symbol]++;
             }
             this.BuildTree();
         }
@@ -80,23 +89,41 @@ namespace HuffmanCompression
             SaveToArray(2 * index + 2, root.Right);
         }
 
-        public BitArray Encode(List<int> _source)
+        public BitArray Encode(byte[] source)
         {
-            int[] source = _source.ToArray();
             List<bool> encodedSource = new List<bool>();
-            for (int i = 0; i < source.Length; i++)
+            Dictionary<byte, List<bool>> Vist = new Dictionary<byte, List<bool>>();
+            int Length = source.Length;
+            for (int i = 0; i < Length; i++)
             {
-                List<bool> encodedSymbol = this.Root.Traverse((char)source[i], new List<bool>());
-                encodedSource.AddRange(encodedSymbol);
+                if (Vist.ContainsKey(source[i]))
+                {
+                    encodedSource.AddRange(Vist[source[i]]);
+                    continue;
+                }
+                Node CurNode = LeefDectionry[(char)source[i]];
+                List<bool> templiast = new List<bool>();
+                while (CurNode != Root) // start from leaf note "faster"
+                {
+                    templiast.Add(CurNode.Bit);
+                    CurNode = CurNode.Parent;
+                }
+                
+                templiast.Reverse();
+                Vist.Add(source[i], templiast);
+                encodedSource.AddRange(templiast);
+                // List<bool> encodedSymbol = this.Root.Traverse((char)source[i], new List<bool>());  //start from root "slower"
+                 // encodedSource.AddRange(encodedSymbol);
             }
+            //encodedSource.Reverse();
             BitArray bits = new BitArray(encodedSource.ToArray());
             return bits;
         }
 
         public List<int> Decode(BitArray bits)
         {
-            string decoded = "";
             Node current = Root;
+            List<int> decodedList = new List<int>();
             foreach (bool bit in bits)
             {
                 if (bit)
@@ -116,17 +143,18 @@ namespace HuffmanCompression
 
                 if (IsLeaf(current))
                 {
-                    decoded += current.Symbol;
+                    //decoded += current.Symbol;
+                    decodedList.Add((int)current.Symbol);
                     current = Root;
                 }
             }
 
-            List<int> decodedList = new List<int>();
 
-            for (int i = 0; i < decoded.Length; i++)
-            {
-                decodedList.Add((int)decoded[i]);
-            }
+            //int Length = decoded.Length;
+            //for (int i = 0; i < Length; i++)
+            //{
+            //    decodedList.Add((int)decoded[i]);
+            //}
 
             return decodedList;
         }
@@ -148,7 +176,6 @@ namespace HuffmanCompression
         {
             if (IsLeaf(node))
                 return 1;
-
             return 1 + Math.Max(GetHight(node.Left), GetHight(node.Right));
         }
     }

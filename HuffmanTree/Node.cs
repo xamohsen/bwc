@@ -12,6 +12,9 @@ namespace HuffmanCompression
         public int Frequency { get; set; }
         public Node Right { get; set; }
         public Node Left { get; set; }
+        public Node Parent { get; set;}
+        public bool Bit { get; set; }
+        public bool ISLeaf { get; set; }
         public int CompareTo(Node other)
         {
             if (this.Frequency < other.Frequency) return -1;
